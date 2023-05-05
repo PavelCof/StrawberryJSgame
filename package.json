@@ -1,0 +1,31 @@
+{
+  "name": "jsappprojects",
+  "version": "1.0.1",
+  "main": "main.js",
+  "dependencies": {},
+  "devDependencies": {
+    "electron": "^9.0.0",
+    "electron-builder": "^22.7.0"
+  },
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "ru.litcenter.GameApp",
+    "productName": "First Game app",
+    "win": {
+      "target": [
+        "portable"
+      ],
+      "icon": "build/icon.ico"
+    },
+    "directories": {
+      "output": "build"
+    }
+  },
+  "author": "PK",
+  "license": "ISC",
+  "description": ""
+}
